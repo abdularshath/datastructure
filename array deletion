@@ -1,0 +1,33 @@
+/******************************************************************************
+
+array delete element at any position by specifying the position index:
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int n,ind,val;
+    scanf("%d",&n);
+    int a[n];
+    scanf("%d",&ind);
+    
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    
+    for(int i=0;i<n;i++){
+        printf("%d",a[i]);
+    }
+
+    printf("\nafter deletion:\n");
+    for(int i=ind;i<n;i++){
+        a[i]=a[i+1];
+    }
+    n--;
+    
+    for(int i=0;i<n;i++){
+        printf("%d",a[i]);
+    }
+    return 0;
+}
