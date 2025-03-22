@@ -8,6 +8,6 @@ class main{
     bike.add("Duke200");
     bike.addfirst("RC200");
     bike.addLast("Apache310RR");
-    System.out.println(bikes);
+    System.out.println(bike);
 }
 }
